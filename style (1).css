@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav{
+  background: #b31463;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #cc3764;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #c21d83;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+.ban_sec {
+  width: 100%;
+}
+.ban_img {
+  width: 100%;
+  position: relative;
+}
+.ban_img img {
+  width: 100%;
+}
+.ban_text {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.ban_text strong {
+  font: 800 62.22px/70px "Montserrat", sans-serif;
+  color: #020202;
+  text-transform: uppercase;
+}
+.ban_text strong span {
+  font: 400 44.44px/52px "Montserrat", sans-serif;
+  letter-spacing: 3px;
+}
+.ban_text p {
+  font: 400 25px/30px "Montserrat", sans-serif;
+  color: #fff;
+  margin: 7px 0 25px;
+}
+.ban_text a {
+  display: inline-block;
+  font: 800 19.39px/24px "Montserrat", sans-serif;
+  background: #282828;
+  border-radius: 26px;
+  color: #fff;
+  padding: 12px 28px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration:none;
+}
+.ban_text a:hover {
+  background: #50af47;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .ban_text p {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ban_text p {
+    font-size: 17px;
+  }
+  .ban_text strong {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .ban_text strong span {
+    font-size: 37px;
+  }
+  .ban_text a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .ban_text strong {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .ban_text strong span {
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 2px;
+  }
+  .ban_text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ban_text a {
+    font-size: 13.39px;
+    line-height: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ban_img img {
+    min-height: 290px;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .ban_text strong {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .ban_text strong span {
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 1px;
+  }
+  .ban_text {
+    left: 2%;
+  }
+}
+
+
+
+.scroll-left {
+    height: 50px; 
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    background-color: #b31463;
+    }
+    .scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 60px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%); 
+    transform:translateX(100%);
+    /* Apply animation to this element */ 
+    -moz-animation: scroll-left 10s linear infinite;
+    -webkit-animation: scroll-left 10s linear infinite;
+    animation: scroll-left 10s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-left {
+    0% { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes scroll-left {
+    0% { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes scroll-left {
+    0% { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+    }
+
+
+
+    
+/* Menu */
+
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu h1 span{
+    color: rgb(222, 38, 102);
+    margin-left: 15px;
+   font-family: mv boli;
+}
+
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(222, 38, 102);
+    display: block;
+    position: relative;
+    bottom: 15px;
+} 
+
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px
+}
+
+/* Box */
+.menu .menu_box .menu_card{
+    width: 350px;
+    height: 550px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+/* picture size */
+.menu .menu_box .menu_card .menu_image{
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .menu_box .menu_card .menu_image img{
+   width:100%;
+   height:100%;
+   object-fit: cover;
+   object-position: center;
+   transition: 0.3s;
+  
+}
+
+.menu .menu_box .menu_card .menu_image:hover img{
+    transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -285px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -300px;
+    right: 20px;
+    opacity: 1;
+
+}
+
+.menu .menu_box .menu_card .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 002s;
+
+}
+.menu .menu_box .menu_card .small_card i:hover{
+    color:  rgb(222, 38, 102);
+}
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 30px;
+    color: rgb(222, 38, 102);
+}
+.menu .menu_box .menu_card .menu_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 20px;
+}
+.menu .menu_box .menu_card .menu_info h3{
+    text-align: center;
+    margin-top: px;
+}
+.menu .menu_box .menu_card .menu_info .menu_icon{
+    color: rgb(222, 38, 102);
+    text-align: center;
+    margin: 10px 0 10px 0;
+
+}
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: double;
+    color: white;
+    background: black;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+
+.top{
+    display: flex;
+    background: #b31463;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 55vh;
+  }
+  
+  .footer {
+    position: relative;
+    width: 100%;
+    background: #b31463;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .dummy{
+    font-family:"Poppins", sans-serif;
+    font-size: 10px;
+  }
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://www.pngmart.com/files/12/Golden-Wave-PNG-Pic.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
