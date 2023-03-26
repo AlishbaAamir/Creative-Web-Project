@@ -398,6 +398,57 @@ a.active,a:hover{
     margin: 0 80px;
     transition: 0.3s;
 }
+@media screen and (max-width: 600px)
+
+{
+    .menu{
+        width: 100%;
+        padding: 60px 0;
+    }
+    
+    .menu h1{
+        font-size: 40px;
+        justify-content: center;
+        
+    }
+
+
+
+.menu .menu_box{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 10px
+}
+
+/* Box */
+.menu .menu_box .menu_card{
+    width: 335px;
+    height: 535px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+/* picture size */
+.menu .menu_box .menu_card .menu_image{
+    width: 335px;
+    height: 290px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: rgb(222, 38, 102);
+}
+}
 
 
 .top{
